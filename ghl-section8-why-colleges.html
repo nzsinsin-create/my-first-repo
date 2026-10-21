@@ -97,8 +97,9 @@
   /* HONEYCOMB LOGO CLUSTER */
   .s8-honeycomb {
     /* Tuning — edit these to adjust the look */
-    --s8-half: 56px;            /* half a cell's width (cell width = 2 x this + gap) */
+    --s8-half: 46px;            /* half a cell's width (cell width = 2 x this + gap) — smaller = tighter */
     --s8-gap: 4px;              /* space between cells */
+    --s8-logo-scale: 1.12;      /* enlarges each image to cancel the empty margins built into the logo files */
     --s8-zoom: 1.95;            /* how much a hovered logo grows */
 
     --s8-hex-w: calc(var(--s8-half) * 2 + var(--s8-gap));
@@ -136,7 +137,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 11% 6%;            /* smaller = bigger logos */
+    padding: 4% 0;
     box-sizing: border-box;
   }
 
@@ -147,6 +148,7 @@
     height: auto;
     object-fit: contain;
     display: block;
+    transform: scale(var(--s8-logo-scale));
     /* Shape-following halo: three soft whitish-grey glows traced around the logo */
     filter:
       drop-shadow(0 0 5px rgba(240, 243, 249, 0.90))
@@ -295,7 +297,7 @@
   /* Phones: 3 - 2 - 3 - 2 - 3 (boxed logos on top, seals below). Side logos grow inward so they stay on screen. */
   @media (max-width: 680px) {
     .s8-honeycomb {
-      --s8-half: 46px;
+      --s8-half: 40px;
       --s8-gap: 3px;
       --s8-zoom: 1.9;
       grid-template-columns: repeat(6, var(--s8-half));
