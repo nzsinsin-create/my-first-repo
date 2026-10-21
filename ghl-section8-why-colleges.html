@@ -16,6 +16,7 @@
     --s8-logo-max-width: 150px;  /* caps wide wordmarks so they don't dominate */
     --s8-logo-spacing: 24px;     /* half the space between logos (applied on both sides) */
     --s8-chyron-speed: 55s;      /* time for one full set to pass */
+    --s8-fade-color: rgba(15, 32, 54, 0.95); /* edge fade colour */
 
     /* Logo treatment. Default = your current white silhouette.
        If a logo has a solid (non-transparent) background, try instead:
@@ -130,17 +131,38 @@
     text-align: center;
   }
 
-  /* The fade is a mask on the logos themselves, so it blends with ANY background
-     (the old navy gradient overlays showed as dark bands on a different backdrop). */
   #s8-why-colleges .s8-chyron {
     position: relative;
+    display: flex;
     width: 100%;
     overflow: hidden;
+    white-space: nowrap;
     padding: 10px 0;
-    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 80px, #000 calc(100% - 80px), transparent 100%);
-            mask-image: linear-gradient(to right, transparent 0, #000 80px, #000 calc(100% - 80px), transparent 100%);
     cursor: default;
     -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Fade edges (same overlay technique as the original). Set --s8-fade-color to
+     match the colour behind this card if you ever see dark bands at the edges. */
+  #s8-why-colleges .s8-chyron::before,
+  #s8-why-colleges .s8-chyron::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 80px;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  #s8-why-colleges .s8-chyron::before {
+    left: 0;
+    background: linear-gradient(to right, var(--s8-fade-color), transparent);
+  }
+
+  #s8-why-colleges .s8-chyron::after {
+    right: 0;
+    background: linear-gradient(to left, var(--s8-fade-color), transparent);
   }
 
   /* Two identical sets side by side. Spacing lives INSIDE each item (padding, not gap),
@@ -157,9 +179,6 @@
     display: flex;
     align-items: center;
     flex-shrink: 0;
-    margin: 0;
-    padding: 0;
-    list-style: none;
   }
 
   #s8-why-colleges .s8-chyron:hover .s8-chyron-track,
@@ -174,7 +193,7 @@
   }
 
   #s8-why-colleges .s8-logo-item {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
@@ -357,9 +376,9 @@
       padding: 0 20px 16px 20px;
     }
 
-    #s8-why-colleges .s8-chyron {
-      -webkit-mask-image: linear-gradient(to right, transparent 0, #000 40px, #000 calc(100% - 40px), transparent 100%);
-              mask-image: linear-gradient(to right, transparent 0, #000 40px, #000 calc(100% - 40px), transparent 100%);
+    #s8-why-colleges .s8-chyron::before,
+    #s8-why-colleges .s8-chyron::after {
+      width: 40px;
     }
 
     #s8-why-colleges .s8-testimonials-card {
@@ -379,8 +398,11 @@
   /* Visitors who ask their device for less motion get a still, wrapped grid of logos */
   @media (prefers-reduced-motion: reduce) {
     #s8-why-colleges .s8-chyron {
-      -webkit-mask-image: none;
-              mask-image: none;
+      white-space: normal;
+    }
+    #s8-why-colleges .s8-chyron::before,
+    #s8-why-colleges .s8-chyron::after {
+      display: none;
     }
     #s8-why-colleges .s8-chyron-track {
       animation: none;
@@ -433,37 +455,37 @@
       <div class="s8-chyron" role="region" aria-labelledby="s8-partners-label" tabindex="0">
         <div class="s8-chyron-track">
           <!-- SET A — the real list. REPLACE each "Partner institution N" alt with the institution's name. -->
-          <ul class="s8-logo-set">
-            <li class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fad7840bad1c114c9ccd.png" alt="Partner institution 1" height="56" decoding="async"></li>
-            <li class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fad7fdcb71bb82583370.png" alt="Partner institution 2" height="56" decoding="async"></li>
-            <li class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fad7840bad1c114c9ccc.png" alt="Partner institution 3" height="56" decoding="async"></li>
-            <li class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fad7a0bb969dd9310e0d.png" alt="Partner institution 4" height="56" decoding="async"></li>
-            <li class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fad7a0c3fa1f7d598885.png" alt="Partner institution 5" height="56" decoding="async"></li>
-            <li class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fad755feecaeea8eb502.png" alt="Partner institution 6" height="56" decoding="async"></li>
-            <li class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fadaa0bb969dd9310e67.png" alt="Partner institution 7" height="56" decoding="async"></li>
-            <li class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fadaa0c3fa1f7d5988d9.png" alt="Partner institution 8" height="56" decoding="async"></li>
-            <li class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fada6e47ee7c823a8430.png" alt="Partner institution 9" height="56" decoding="async"></li>
-            <li class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fadaac05a0d91fa7b762.png" alt="Partner institution 10" height="56" decoding="async"></li>
-            <li class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fadb3be7ffaf0d5002cc.png" alt="Partner institution 11" height="56" decoding="async"></li>
-            <li class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fadb6e47ee7c823a8448.png" alt="Partner institution 12" height="56" decoding="async"></li>
-            <li class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fadcfdcb71bb825833c1.png" alt="Partner institution 13" height="56" decoding="async"></li>
-          </ul>
+          <div class="s8-logo-set">
+            <div class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fad7840bad1c114c9ccd.png" alt="Partner institution 1"></div>
+            <div class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fad7fdcb71bb82583370.png" alt="Partner institution 2"></div>
+            <div class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fad7840bad1c114c9ccc.png" alt="Partner institution 3"></div>
+            <div class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fad7a0bb969dd9310e0d.png" alt="Partner institution 4"></div>
+            <div class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fad7a0c3fa1f7d598885.png" alt="Partner institution 5"></div>
+            <div class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fad755feecaeea8eb502.png" alt="Partner institution 6"></div>
+            <div class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fadaa0bb969dd9310e67.png" alt="Partner institution 7"></div>
+            <div class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fadaa0c3fa1f7d5988d9.png" alt="Partner institution 8"></div>
+            <div class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fada6e47ee7c823a8430.png" alt="Partner institution 9"></div>
+            <div class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fadaac05a0d91fa7b762.png" alt="Partner institution 10"></div>
+            <div class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fadb3be7ffaf0d5002cc.png" alt="Partner institution 11"></div>
+            <div class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fadb6e47ee7c823a8448.png" alt="Partner institution 12"></div>
+            <div class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fadcfdcb71bb825833c1.png" alt="Partner institution 13"></div>
+          </div>
           <!-- SET B — visual duplicate for the seamless loop; hidden from screen readers -->
-          <ul class="s8-logo-set" aria-hidden="true">
-            <li class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fad7840bad1c114c9ccd.png" alt="" height="56" decoding="async"></li>
-            <li class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fad7fdcb71bb82583370.png" alt="" height="56" decoding="async"></li>
-            <li class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fad7840bad1c114c9ccc.png" alt="" height="56" decoding="async"></li>
-            <li class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fad7a0bb969dd9310e0d.png" alt="" height="56" decoding="async"></li>
-            <li class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fad7a0c3fa1f7d598885.png" alt="" height="56" decoding="async"></li>
-            <li class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fad755feecaeea8eb502.png" alt="" height="56" decoding="async"></li>
-            <li class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fadaa0bb969dd9310e67.png" alt="" height="56" decoding="async"></li>
-            <li class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fadaa0c3fa1f7d5988d9.png" alt="" height="56" decoding="async"></li>
-            <li class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fada6e47ee7c823a8430.png" alt="" height="56" decoding="async"></li>
-            <li class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fadaac05a0d91fa7b762.png" alt="" height="56" decoding="async"></li>
-            <li class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fadb3be7ffaf0d5002cc.png" alt="" height="56" decoding="async"></li>
-            <li class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fadb6e47ee7c823a8448.png" alt="" height="56" decoding="async"></li>
-            <li class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fadcfdcb71bb825833c1.png" alt="" height="56" decoding="async"></li>
-          </ul>
+          <div class="s8-logo-set" aria-hidden="true">
+            <div class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fad7840bad1c114c9ccd.png" alt=""></div>
+            <div class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fad7fdcb71bb82583370.png" alt=""></div>
+            <div class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fad7840bad1c114c9ccc.png" alt=""></div>
+            <div class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fad7a0bb969dd9310e0d.png" alt=""></div>
+            <div class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fad7a0c3fa1f7d598885.png" alt=""></div>
+            <div class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fad755feecaeea8eb502.png" alt=""></div>
+            <div class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fadaa0bb969dd9310e67.png" alt=""></div>
+            <div class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fadaa0c3fa1f7d5988d9.png" alt=""></div>
+            <div class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fada6e47ee7c823a8430.png" alt=""></div>
+            <div class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fadaac05a0d91fa7b762.png" alt=""></div>
+            <div class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fadb3be7ffaf0d5002cc.png" alt=""></div>
+            <div class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fadb6e47ee7c823a8448.png" alt=""></div>
+            <div class="s8-logo-item"><img src="https://assets.cdn.filesafe.space/1IvPzTV5nnlxozLcuIrG/media/6ad8fadcfdcb71bb825833c1.png" alt=""></div>
+          </div>
         </div>
       </div>
     </div>
