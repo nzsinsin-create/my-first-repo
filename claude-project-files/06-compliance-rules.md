@@ -17,3 +17,8 @@
 - [ ] Facts have a source
 - [ ] CTA is a consultation, guide or booking
 - [ ] Doctor reviewed medical facts
+
+## About GLP-1s and peptides in content
+- We may mention them only in safety education (e.g. "talk to a doctor", "check FDA registration").
+- We never recommend, sell, source, price or point people to them.
+- Supplements: only FDA-registered ones, no health or treatment claims, and always "ask your doctor first."

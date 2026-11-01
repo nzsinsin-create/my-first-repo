@@ -1,29 +1,32 @@
 # Brand Voice
 
 ## Personality
-Premium, scientific, accessible, respectful, responsible. Like a smart friend who happens to work with a doctor.
+Luxurious, calm, smart and warm. Think a high-end wellness studio that still talks to you like a kaibigan.
 
 ## How we sound
-- **Clear:** plain words, short sentences, one main idea per post.
-- **Warm:** we understand the frustration; we never shame.
+- **Taglish**, natural and polished, never jejemon or overly slangy.
+  Example: "Hindi mo kailangan mag-starve para pumayat. You need a plan that actually fits your day."
+- **Short and elegant:** fewer words, more white space. One idea per post.
+- **Warm:** we get the frustration, we never shame.
 - **Honest:** we say what's known, what isn't, and what depends on the person.
 - **Confident, not pushy:** we invite, we don't pressure.
 
-## Language
-- Main: English, with natural Taglish where it fits the audience (TikTok and Facebook especially).
-- Avoid heavy jargon. If a medical term is needed, explain it in one simple line.
-
-## Words we use
-assessment, plan, guidance, labs, sustainable, support, progress, doctor-guided, your goals
+## Words we like
+reset, ritual, glow, balance, plan, nourish, steady energy, your pace, doctor-guided, sustainable
 
 ## Words and phrases we never use
-- "miracle", "guaranteed", "cure", "instant", "no side effects", "100% safe", "FDA-approved" (unless verified true)
-- Before/after promises, specific kg-loss promises, "lose X kg in Y days"
+- "miracle", "guaranteed", "cure", "instant", "no side effects", "100% safe", "FDA-approved" (unless verified)
+- "Lose X kg in Y days", before/after promises
 - Coded or hidden product names, emoji stand-ins for medicines, "DM for the secret"
-- Body-shaming words or jokes about weight
+- Body-shaming words or jokes about weight ("tabachoy", "baboy", etc.)
 
-## Visual style (for Canva)
-- Colors: [primary hex], [secondary hex], [accent hex]
-- Fonts: [heading font], [body font]
-- Look: clean, lots of white space, soft clinical aesthetic, real people, no exaggerated body photos
-- Logo placement: [corner], small
+## Visual style (Canva)
+- **Colors:**
+  - #FFFFFF white: main background (about 70% of every design)
+  - #000000 black: headlines and text (about 25%)
+  - #5CE1E6 aqua: accent only (about 5%): a line, an icon, a highlight word. Using it sparingly is what keeps it looking luxurious.
+- **Fonts (free in Canva):** Headings: Playfair Display or Cormorant Garamond. Body: Montserrat or Poppins (light/regular weight).
+- **Look:** lots of white space, thin lines, minimal icons, soft natural light photos, textures like linen and marble,
+  real women in everyday settings. No exaggerated "fat vs thin" photos.
+- **Logo:** "&well" in the heading font, small, in a corner.
+- **Video:** slow, smooth B-roll (morning routines, meal prep, water, skincare, walking), calm voiceover, soft music.

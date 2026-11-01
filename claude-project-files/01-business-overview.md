@@ -1,42 +1,38 @@
 # Business Overview
 
-> Fill in every [bracket] before uploading.
-
 ## Who we are
-- **Brand name:** [Brand name]
-- **Stage:** Startup. Registered, not yet launched. Target launch date: [date]
-- **Business type:** Wellness and weight-management startup in the Philippines that connects clients
-  with a licensed partner doctor and supports them with coaching programs
+- **Brand name:** &well (written "andwell" for handles, URLs and anywhere "&" can't be used)
+- **Stage:** Startup. Registered, launching in [launch date, about one week away]
+- **Business type:** Filipino wellness startup offering meal plans and subscription wellness protocols
+  for women working on weight, skin and energy, with a recommended partner doctor for medical needs
 - **Team:** 1 founder doing all marketing, with Claude as strategist and content assistant
-- **Marketing budget:** ₱0. Organic only (free posting, free tools)
-- **Partner doctor:** [Dr. Name], [specialty], PRC license no. [number]. Outside partner with their own practice
-- **Location / service area:** [City] + online
-- **Contact channels:** Facebook, Instagram, TikTok, [Viber/WhatsApp]
+- **Marketing budget:** ₱0. Organic only
+- **Base:** Cavite. Serving clients nationwide online
+- **Contact channels:** WhatsApp and Facebook Messenger
 
-## How the partner-doctor model works
-1. Clients find us through our content.
-2. We help them book a consultation with the partner doctor.
-3. The doctor handles assessment, labs and any treatment decisions in their own practice,
-   through legal, FDA-registered channels.
-4. We support clients with coaching between doctor visits.
-
-The startup does not advertise, sell or ship medicines.
-The doctor partnership terms (fees, referrals, data sharing) must be in a written agreement
-that has been checked against medical ethics rules and the Data Privacy Act.
+## Partner doctor
+- A licensed doctor we recommend to clients. They stay in the background: not named or shown in content.
+- Content says things like "We'll connect you with a licensed doctor we trust."
+- The doctor handles any medical assessment, labs and treatment in their own practice,
+  through legal, FDA-registered channels.
+- Partnership terms (referrals, fees, data sharing) are in a written agreement checked against
+  medical ethics rules and the Data Privacy Act.
 
 ## What we sell
-1. **Coaching programs:** e.g. 12-week weight-management coaching, PCOS lifestyle support. Price: [₱___]
-2. **Nutrition / meal plans:** Price: [₱___]
-3. **Habit and accountability check-ins:** Price: [₱___]
-4. **Help booking the partner doctor:** consultation fee paid to the doctor: [₱___]
+| Offer | What's included | Price |
+|---|---|---|
+| **&well Meal Plan** | Monthly Filipino-friendly meal plan for weight, skin and energy goals, grocery list, swaps | ₱1,899 / month |
+| **&well Protocol (subscription)** | Meal plan + daily habit protocol (food, movement, sleep, hydration, skin routine) + weekly WhatsApp check-ins + progress tracking + help booking the partner doctor when needed | ₱2,999 / month |
+
+The &well Protocol is a lifestyle protocol. It never includes medicines, peptides or injectables.
+&well does not advertise, sell, source or ship medicines.
 
 ## Who we serve
-- Adults (18+) dealing with weight, body composition, PCOS, hormones, low energy, skin concerns
-- People who want medical supervision and support instead of guesswork
+Women 18+ who are trying to lose weight and also want better skin and more energy.
 
 ## Main promise
-"Doctor-guided care plus everyday support, so you're never figuring it out alone."
+"Feel well, look well, live well: a plan that fits your Filipino life, with a doctor in your corner."
 
 ## Calls to action
-- Before launch: "Join the waitlist" / "Comment GUIDE for our free guide"
-- After launch: "Message us to book a consultation"
+- Pre-launch: "Comment GUIDE for the free starter guide" / "Join the &well waitlist"
+- After launch: "Message us on WhatsApp or Messenger to start your plan"
