@@ -31,8 +31,9 @@
 5. **Affordability and access** - real costs, questions to ask a doctor.
 6. **Sustainable habits** - nutrition, movement, sleep, stress, routines.
 
-## 5. Weekly mix (starting point)
-- 2 TOFU reels, 2 MOFU carousels, 1 BOFU post, plus Stories.
+## 5. Weekly mix (solo founder)
+- Before launch: 2 TOFU videos, 2 MOFU carousels, 1 founder-story or waitlist post.
+- After launch: 2 TOFU videos, 2 MOFU carousels, 1 BOFU post, plus Stories.
 
 ## 6. Growth mechanics
 - **Hook in the first 1.5 seconds:** specific local detail, bold statement or relatable moment.

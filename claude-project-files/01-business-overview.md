@@ -4,27 +4,39 @@
 
 ## Who we are
 - **Brand name:** [Brand name]
-- **Business type:** Doctor-led wellness and weight-management clinic in the Philippines
-- **Affiliated doctor:** [Dr. Name], [specialty], PRC license no. [number]
-- **Location / service area:** [City] + online consultations
-- **Contact channels:** Facebook, Instagram, TikTok, [Viber/WhatsApp/booking link]
+- **Stage:** Startup. Registered, not yet launched. Target launch date: [date]
+- **Business type:** Wellness and weight-management startup in the Philippines that connects clients
+  with a licensed partner doctor and supports them with coaching programs
+- **Team:** 1 founder doing all marketing, with Claude as strategist and content assistant
+- **Marketing budget:** ₱0. Organic only (free posting, free tools)
+- **Partner doctor:** [Dr. Name], [specialty], PRC license no. [number]. Outside partner with their own practice
+- **Location / service area:** [City] + online
+- **Contact channels:** Facebook, Instagram, TikTok, [Viber/WhatsApp]
 
-## What we sell (the offer)
-1. **Doctor consultation** - assessment, history, goals. Price: [₱___]
-2. **Lab work packages** - [list tests]. Price: [₱___]
-3. **Programs** - e.g. 12-week weight-management program, PCOS support program. Price: [₱___]
-4. **Coaching** - nutrition, fitness, sleep and habit coaching. Price: [₱___]
-5. **Follow-ups** - progress check-ins and body-composition tracking. Price: [₱___]
+## How the partner-doctor model works
+1. Clients find us through our content.
+2. We help them book a consultation with the partner doctor.
+3. The doctor handles assessment, labs and any treatment decisions in their own practice,
+   through legal, FDA-registered channels.
+4. We support clients with coaching between doctor visits.
 
-Any medicine is decided by the doctor during a consultation and supplied through legal,
-FDA-registered channels. The business does not advertise, sell or ship medicines directly.
+The startup does not advertise, sell or ship medicines.
+The doctor partnership terms (fees, referrals, data sharing) must be in a written agreement
+that has been checked against medical ethics rules and the Data Privacy Act.
+
+## What we sell
+1. **Coaching programs:** e.g. 12-week weight-management coaching, PCOS lifestyle support. Price: [₱___]
+2. **Nutrition / meal plans:** Price: [₱___]
+3. **Habit and accountability check-ins:** Price: [₱___]
+4. **Help booking the partner doctor:** consultation fee paid to the doctor: [₱___]
 
 ## Who we serve
 - Adults (18+) dealing with weight, body composition, PCOS, hormones, low energy, skin concerns
-- People who want medical supervision instead of guesswork
+- People who want medical supervision and support instead of guesswork
 
-## Our main promise
-"A doctor-guided plan built around your body, your labs and your life."
+## Main promise
+"Doctor-guided care plus everyday support, so you're never figuring it out alone."
 
-## Main call to action
-"Message us to book a consultation." / "Comment GUIDE and we'll send it to you."
+## Calls to action
+- Before launch: "Join the waitlist" / "Comment GUIDE for our free guide"
+- After launch: "Message us to book a consultation"
